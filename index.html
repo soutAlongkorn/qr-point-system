@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สะสมแต้ม</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ยินดีต้อนรับสู่โลกแห่งการสะสมแต้ม!</h1>
+        <div id="reader" class="qr-reader"></div>
+        <div id="result" class="result"></div>
+        <div class="points">
+            <h2>แต้มคงเหลือ: <span id="points">0</span></h2>
+        </div>
+
+        <div class="prizes">
+            <h2>ของรางวัล</h2>
+            <ul id="prize-list">
+                <li>กาแฟฟรี (50 แต้ม) <button onclick="redeemPrize(50)">แลก</button></li>
+                <li>คูปองส่วนลด 10% (30 แต้ม) <button onclick="redeemPrize(30)">แลก</button></li>
+                <li>สินค้าแลกซื้อ (100 แต้ม) <button onclick="redeemPrize(100)">แลก</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script
